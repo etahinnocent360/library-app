@@ -17,6 +17,8 @@ const express = require("express"),
   adminRoutes = require("./routes/admin"),
   bookRoutes = require("./routes/books"),
   authRoutes = require("./routes/auth");
+var util= require('util');
+var encoder = new util.TextEncoder('utf-8');
 
 // const Seed = require('./seed');
 // uncomment below line for first time to seed database;
