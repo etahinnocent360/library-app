@@ -46,6 +46,9 @@ mongoose
   .then(() => console.log("MongoDB is connected"))
   .catch((error) => console.log(error));
 
+process.env.ADMIN_SECRET
+
+
 //PASSPORT CONFIGURATION
 
 const store = new MongoStore({
