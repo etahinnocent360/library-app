@@ -1,3 +1,4 @@
+const { date } = require("faker");
 const mongoose = require("mongoose");
 
 const issueSchema = new mongoose.Schema({
@@ -11,7 +12,7 @@ const issueSchema = new mongoose.Schema({
        ISBN : String,
        category : String,
        stock : Number,
-       issueDate : {type : Date, default : Date.now()},
+       issueDate : {type : Date, default : date.now()},
        returnDate : {type : Date, default : Date.now() + 7*24*60*60*1000},
        isRenewed : {type : Boolean, default : false},
    }, 
