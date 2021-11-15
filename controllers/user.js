@@ -511,7 +511,7 @@ exports.deleteComment = async(req, res, next) => {
 // user -> delete user account
 exports.deleteUserAccount = async (req, res, next) => {
     try {
-        const user_id = req.user._id;
+        const user_id = req.params.user._id;
 
         const user = await User.findById(user_id);
         await user.remove();
