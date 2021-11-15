@@ -1,21 +1,19 @@
+.landing-page{
+	background-image: url(../image/library.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .landing-container{
 		background-color: rgba(216, 216, 216, 0.247);
+		height: 80vh;
 }
 
 .landing{
-	display: flex;
-	height: 90vh;
-	width: 100%;
-
-	.lib{
-		width: 50%;
-		background-image: url(/images/library.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+	
+	
 	.logs{
-		width: 50%;
+		width: 100%;
 		.left{
 			width: 100%;
 			background-color: red;
