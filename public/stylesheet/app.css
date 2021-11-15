@@ -5,8 +5,12 @@
 }
 
 .landing-container {
-  background-color: rgba(216, 216, 216, 0.247);
+  background-color: rgba(216, 216, 216, 0.651);
   height: 80vh;
+}
+
+.landing-container .mt-3 {
+  padding-top: 40px;
 }
 
 .landing .logs {
