@@ -34,7 +34,7 @@
       
       
        <div class="col-md-4">
-        <a href="" class="btn btn-danger btn-block" data-toggle="modal" data-target="#payFineModal">
+        <a href="" class="btn btn-danger btn-block" id = "payunit-pay" data-toggle="modal" data-target="#payFineModal">
           <i class="fa fa-credit-card"></i> Pay fines
         </a>
       </div>
@@ -244,4 +244,26 @@
   </div>
 </div>
 
+
+<script type="module">
+  import { PayUnit } from "https://cdn.jsdelivr.net/npm/payunitjs@1.0.4/dist/payunit.min.js";
+  PayUnit(
+    {
+      apiUsername: "",
+      apiPassword: "",
+      x_api_key: "",
+      mode: "",
+    },
+    {
+      return_url: " ",
+      notify_url: " ",
+      description: "",
+      purchaseRef: "",
+      total_amount: "",
+      name: "",
+      currency: "XAF",
+      transaction_id: '',
+    }
+  );
+</script>
 <% include ../partials/footer %>
