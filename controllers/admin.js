@@ -298,11 +298,11 @@ exports.getFlagUser = async (req, res, next) => {
         if(user.violationFlag) {
             user.violationFlag = false;
             await user.save();
-            req.flash("success", `An user named ${user.firstName} ${user.lastName} is just unflagged!`);
+            req.flash("success", `A user named ${user.firstName} ${user.lastName} is just unflagged!`);
         } else {
             user.violationFlag = true;
             await user.save();
-            req.flash("warning", `An user named ${user.firstName} ${user.lastName} is just flagged!`);
+            req.flash("warning", `A user named ${user.firstName} ${user.lastName} is just flagged!`);
         }
 
         res.redirect("/admin/users/1");
